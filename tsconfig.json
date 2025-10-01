@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "src",
     "target": "ES6",
     "module": "ESNext",
     "jsx": "react-jsx",
@@ -9,7 +10,13 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
     "sourceMap": true,
-    "outDir": "./dist"
+    "outDir": "./dist",
+    "paths": {
+      "@assets/*": ["assets/*"],
+      "@components/*": ["components/*"],
+      "@styles/*": ["styles/*"],
+      "@types/*": ["types/*"],
+    },
   },
    "include": ["src", "src/types"]
 }
