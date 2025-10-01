@@ -1,6 +1,6 @@
 import React from "react";
-import { timelineData, TimelineSlider } from "./components/timelineSlider";
-import './styles/styles.scss';
+import { timelineData, TimelineSlider } from "@components/timelineSlider";
+import "@styles/styles.scss";
 
 const App = () => {
   return (

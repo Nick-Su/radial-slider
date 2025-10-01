@@ -3,13 +3,13 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper/modules';
 import type { Swiper as SwiperType } from 'swiper';
 import { RadialButton } from '../radialButton/RadialButton';
+import { ITimeLinePeriodEvent } from '../../interfaces';
 
 import "./horizontalSlider.scss";
 
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { ITimeLinePeriodEvent } from '../../interfaces';
 
 interface IHorizontalSlider {
   events: ITimeLinePeriodEvent[];
