@@ -1,0 +1,43 @@
+@use "../../../../styles/colors";
+
+.time-frame-container {
+  position: absolute;
+  line-height: 160px;
+  letter-spacing: -2%;
+  font-size: 200px;
+  width: 973px;
+  height: 150px;
+  z-index: 0;
+  top: 280px;
+
+  p {
+    margin: 0;
+  }
+  
+  span {
+    display: inline-block;
+    width: 50%;
+    font-weight: 700;
+  }
+
+  p span:first-child {
+    color: colors.$iris;
+    text-align: left;
+  }
+
+  p span:last-child {
+    color: colors.$fuschia100;
+    text-align: right;
+  }
+
+  @media (max-width: 1080px) {
+    font-size: 56px;
+    line-height: auto;
+    width: auto;
+    margin-top: 56px;
+    position: static;
+    width: 273px;
+    height: 73px;
+    line-height: normal;
+  }
+}

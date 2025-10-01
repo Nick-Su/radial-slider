@@ -1,0 +1,29 @@
+@use "../../../../styles/colors";
+
+.controls {
+  position: absolute;
+  left: 0;
+  top: 570px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 80px;
+
+  p {
+    font-size: 14px;
+    margin: 0;
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: 1080px) {
+    top: '100%';
+    margin-left: 20px;
+  }
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  width: 120px;
+  justify-content: space-between;
+}

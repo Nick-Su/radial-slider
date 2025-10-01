@@ -1,0 +1,12 @@
+@use "./colors" as colors;
+
+* {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: colors.$blackBlue;
+}
+
+body {
+  background-color: colors.$primaryBackground;
+}

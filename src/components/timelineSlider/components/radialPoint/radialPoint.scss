@@ -1,0 +1,70 @@
+@use "../../../../styles/colors";
+
+.radial-point {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform-origin: 0 0;
+  transition: transform 450ms cubic-bezier(.22, .9, .32, 1);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+
+  &:not(.active) .point-dot {
+    width: 6px;
+    height: 6px;
+    background: colors.$primaryBlue;
+    transition: margin 0.5s ease, width 0.5s ease, height 0.5s ease, background-color 0.5s ease-out; 
+  }
+
+  &.active .point-dot {
+    width: 56px;
+    height: 56px;
+    color: colors.$blackBlue;
+    background: colors.$white;
+    border: 1px solid colors.$darkerGrey;
+  }
+
+  &:not(.active):hover .point-dot {
+    width: 56px;
+    height: 56px;
+    color: colors.$blackBlue;
+    background: colors.$white;
+    border: 1px solid colors.$darkerGrey;
+    margin-top: -24px;
+    margin-left: -24px;
+  }
+
+  &:not(.active):hover .point-dot {
+    width: 56px;
+    height: 56px;
+    color: colors.$blackBlue;
+    background: colors.$white;
+    border: 1px solid colors.$darkerGrey;
+    margin-top: -24px;
+    margin-left: -24px;
+  }
+
+  &:hover .point-index,
+  &.active .point-index  {
+    display: block;
+    color: colors.$blackBlue;
+  }
+}
+
+.point-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  z-index: 100;
+}
+
+.point-index {
+  display: none;
+  font-size: 20px;
+}

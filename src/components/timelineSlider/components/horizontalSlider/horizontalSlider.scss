@@ -1,0 +1,66 @@
+@use "../../../../styles/colors";
+
+.swiper {
+  width: 85%;
+  height: 100%;
+  margin: 20px auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-container {
+  height: 130px;
+  width: 100%;
+  margin: 0;
+  text-overflow: clip;
+
+}
+
+.swiper-card-title {
+  font-size: 25px;
+  margin: 0;
+  padding: 0;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: colors.$blue;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.swiper-card-description {
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0;
+}
+
+.swiper-slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.slider-button-container {
+  width: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @media (max-width: 1080px) {
+    display: none;
+  }
+}

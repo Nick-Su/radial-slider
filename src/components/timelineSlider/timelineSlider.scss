@@ -1,0 +1,26 @@
+@use "../../styles/colors";
+
+.container {
+  margin: 0 auto;
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  background-color: colors.$primaryBackground;;
+  border-left: 1px solid colors.$lightGrey;
+  border-right: 1px solid colors.$lightGrey;
+  position: relative;
+
+  @media (max-width: 1080px) {
+    border: none;
+    padding-left: 20px;
+    width: 100%;
+  }
+}
+
+.horizontal-slider-сontainer {
+  width: 100%;
+  display: flex;
+  margin-top: 56px;
+}

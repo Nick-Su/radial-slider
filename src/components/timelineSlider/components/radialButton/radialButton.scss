@@ -1,0 +1,24 @@
+@use "../../../../styles/colors";
+
+.radial-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid colors.$blue50;
+  background-color: colors.$primaryBackground;
+  font-size: 35px;
+  color: colors.$lightGrey;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.radial-button:not(:disabled):hover {
+  background-color: white;
+}
+
+.radial-button:disabled {
+  border-color: colors.$lightGrey;
+}
